@@ -49,9 +49,9 @@ if [ -f ${IMAGE} ]; then
       echo
       echo 'shrinking image...'
       echo
-      time sudo ./pishrink.sh ${IMAGE}
+      time sudo ./pishrink.sh ${IMAGE} shrunken-${IMAGE}
       echo
-      ls -lh ${IMAGE}
+      ls -lh ${IMAGE} shrunken-${IMAGE}
       echo
       echo '#############################################'
       echo '###                 DONE                  ###'
